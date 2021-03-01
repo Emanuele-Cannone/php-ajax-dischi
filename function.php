@@ -3,4 +3,11 @@ Al caricamento della pagina si dovranno visualizzare tutti i dischi. -->
 
 <?php 
 
-$saluto = 'ciao';
+include_once 'database.php';
+
+
+foreach ($dischi as $element) {
+    $name .= '<p>'.$element['name'].'</p>';
+    $image .= '<p>'.$element['image'].'</p>';
+    
+}
