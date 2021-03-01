@@ -1,8 +1,12 @@
 <?php 
-    include 'function.php';
-
+    
+    include 'database.php';
 
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +18,22 @@
 <body>
     
 
-    <h1><?php echo $name?></h1>
+    <?php foreach ($dischi as $element) { ?>
+        
+
+        <div class="etichette">
+
+            <h2><?php echo $element['name']?></h2>
+            <img src="<?php echo $element['image'] ?>" alt="">
+
+        </div>
+
+
+
+
+    <?php }?>
+    
+
+
 </body>
 </html>

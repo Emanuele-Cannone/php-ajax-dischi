@@ -3,11 +3,11 @@ Al caricamento della pagina si dovranno visualizzare tutti i dischi. -->
 
 <?php 
 
-include_once 'database.php';
 
 
-foreach ($dischi as $element) {
-    $name .= '<p>'.$element['name'].'</p>';
-    $image .= '<p>'.$element['image'].'</p>';
+
+foreach ($dischi as $element => $ciao) {
+    $name .= '<p>'.$ciao['name'].'</p>';
+    $image .= '<img src="' .$ciao['image'] .'"' .'alt="">';
     
 }

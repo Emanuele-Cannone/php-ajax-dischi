@@ -4,10 +4,10 @@
 
         [
             'name' => 'einaudi',
-            'image' => __DIR__ .'/../einaudi.jpeg'
+            'image' => 'img/einaudi.jpeg'
         ],
         [
             'name' => 'split',
-            'image' => __DIR__ .'/../split.jpeg'
+            'image' => 'img/split.jpeg'
         ]
     ];
