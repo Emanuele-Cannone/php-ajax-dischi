@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Emanuele-Cannone/php-ajax-dischi#readme",
   "devDependencies": {
-    "laravel-mix": "^6.0.13"
+    "laravel-mix": "^6.0.13",
+    "postcss": "^8.2.6",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
   }
 }

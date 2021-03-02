@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+  background-color: black;
+}
+header .logo img {
+  height: 80px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box .etichetta {
+  flex-basis: calc(100% / 4 - 20px);
+  background-color: lightgrey;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  padding: 20px 0;
+  height: 200px;
+}

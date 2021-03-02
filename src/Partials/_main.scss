@@ -1,0 +1,14 @@
+.box{
+    @include flex;
+    flex-wrap: wrap;
+    .etichetta{
+        flex-basis: calc(100% / 4 - 20px);
+        background-color: $col-grey;
+        margin: 10px 20px;
+        @include flex-column;
+    }
+    img{
+        padding: 20px 0;
+        height: 200px;
+    }
+}
