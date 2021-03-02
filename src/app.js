@@ -20,17 +20,17 @@ var app = new Vue({
                         this.arrayGenere.push(element.genere);
 
                     }
+
+                    
                     
                 });
             
             });
     },
-    methods: {
-
+    methods:{
         ciao(){
             console.log(this.numeroGenere);
         }
-        
     }
 
 });
