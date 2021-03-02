@@ -12,24 +12,27 @@
 </head>
 <body>
     
+    <div id="app">
     <header>
         <div class="logo">
             <img src="img/logo.jpg" alt="logo">
+            <select name="All" v-model="numeroGenere" id="selezione">
+                <option v-for="element in arrayGenere" :value="element">{{element}}</option>
+            </select>
         </div>
     </header>
 
     <main>
-        <div id="app">
             <div class="box">
-                <div v-for="element in arrayRisultato" class="etichetta">
+                <div v-for="element in arrayRisultato" v-if="numeroGenere == element.genere || numeroGenere == 'All' " class="etichetta">
                     <h2>{{element.name}}</h2>
                     <img :src="element.image" alt="immagine">
                 </div>
             </div>
 
-        </div>
-
-    </main>
+            
+        </main>
+    </div>
 
     <footer></footer>
     
