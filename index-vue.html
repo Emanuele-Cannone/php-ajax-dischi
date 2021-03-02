@@ -23,8 +23,7 @@
             <div class="box">
                 <div v-for="element in arrayRisultato" class="etichetta">
                     <h2>{{element.name}}</h2>
-                    <img src="{{element.image}}" alt="immagine">
-                    <p>{{element.image}}</p>
+                    <img :src="element.image" alt="immagine">
                 </div>
             </div>
 
