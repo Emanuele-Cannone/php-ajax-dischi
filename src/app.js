@@ -4,6 +4,8 @@ var app = new Vue({
         arrayRisultato: [],
         arrayGenere: ['All'],
         numeroGenere: 0,
+        prova: 0,
+        altroArray: []
     },
     mounted(){
         axios
@@ -14,23 +16,21 @@ var app = new Vue({
                 this.numeroGenere = 'All'; 
 
                 this.arrayRisultato.forEach(element => {
-
+                    
                     if (!this.arrayGenere.includes(element.genere)) {
-
+                        
                         this.arrayGenere.push(element.genere);
-
+                        
                     }
 
-                    
-                    
                 });
+
+                this.arrayGenere.sort();
             
             });
+
+       
     },
-    methods:{
-        ciao(){
-            console.log(this.numeroGenere);
-        }
-    }
+
 
 });
